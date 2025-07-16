@@ -34,7 +34,7 @@ To assess the predictive power of cryptocurrency, we compared two models:
 
 - **SARIMAX**: use lagged cryptocurrency volatility as exogenous regressors:
 <p align="center">
-  <img src="SARIMAX.png" alt="SARIMAX" width="600"/>
+  <img src="SARIMAX.png" alt="SARIMAX" width="650"/>
 </p>
 
 We followed these steps:
