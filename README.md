@@ -21,7 +21,7 @@ transformed monthly volatility for 8 cryptocurrencies between 2017-09 and 2025-0
 
 To prepare the data, we computed log volatility of cryptocurrencies:
 <p align="center">
-  <img src="log_vol.png" alt="Log Volatility" width="400"/>
+  <img src="log_vol.png" alt="Log Volatility" width="300"/>
 </p>
 
 ## Methodology
@@ -41,12 +41,14 @@ variables with p-value < 0.05, and ranked them by MAPE improvement.
 3. **Model Evaluation.** We evaluated model performance using p-values and MAPE
 (Mean Absolute Percentage Error):
 <p align="center">
-  <img src="MAPE.png" alt="MAPE" width="300"/>
+  <img src="MAPE.png" alt="MAPE" width="200"/>
 </p>
 
 #### Window Classification
 Based on the volatility of our macroeconomic variables, we defined 3 windows to capture periods of high volatility [including the COVID shock], low volatility [without significant shock], and a more holistic, medium volatility period.
-![Baseline](Windows.png)
+<p align="center">
+  <img src="Windows.png" alt="Window" width="600"/>
+</p>
 
 ## Results & Discussion
 #### MAPE Improvement
@@ -65,7 +67,7 @@ For each of the windows 1-3, we found that only certain cryptocurrencies helped 
 ![Sample](Sample.png)
 *Figure 2: Consumer confidence index forecasts for window 3 with and without Tether volatility (3 months lag)*
 <p align="center">
-  <img src="CC_equation.png" alt="CC" width="600"/>
+  <img src="CC_equation.png" alt="CC" width="700"/>
 </p>
 For Window 3, Tether, with a 3 month lag, proved significant in forecasting Consumer Confidence (p-value=0.01). Including Tether in the SARIMAX model improved the MAPE by 65.8% when compared to the benchmark SARIMA model. For every unit change in Tether log volatility, the forecast for CC volatility decreased by 1.38. This suggested that Tether, along with Ethereum and Litecoin, exhibited forecasting ability for Consumer Confidence during a moderately volatile period.
 
@@ -75,12 +77,12 @@ Our analysis revealed that cryptocurrencies can be used for forecasting macroeco
 nomic variables across periods of different macroeconomic volatility. Notably:
 - Dogecoin was a consistent predictor across all three time windows, suggesting that investor sentiment may be more closely linked to the broader economy than previously understood.
 - In the low volatility regime, 6 crypto assets improved inflation rate (CPI) prediction suggesting that during calm market phases, inflation may become more closely aligned with crypto dynamics.
+
 While specific cryptocurrencies’ predictive power proved to be conditional on the
 market regime, our model’s performance suggests a potentially larger role in hybrid
 forecasting models that combine traditional assets with cryptocurrency. Future ex-
 plorations could include non-linear models and also global macroeconomic indicators.
 
-## References
 
 ## References
 
