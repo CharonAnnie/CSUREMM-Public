@@ -21,7 +21,7 @@ transformed monthly volatility for 8 cryptocurrencies between 2017-09 and 2025-0
 
 To prepare the data, we computed log volatility of cryptocurrencies:
 <p align="center">
-  <img src="log_vol.png" alt="Log Volatility" width="300"/>
+  <img src="log_vol.png" alt="Log Volatility" width="350"/>
 </p>
 
 ## Methodology
