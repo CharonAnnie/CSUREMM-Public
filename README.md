@@ -28,9 +28,13 @@ To prepare the data, we computed log volatility of cryptocurrencies:
 #### SARIMAX
 To assess the predictive power of cryptocurrency, we compared two models:
 - **Baseline SARIMA**: no exogenous variables:
-![Baseline](SARIMA.png)
+<p align="center">
+  <img src="SARIMA.png" alt="SARIMA" width="600"/>
+</p>
 - **SARIMAX**: use lagged cryptocurrency volatility as exogenous regressors:
-![Equation](SARIMAX.png)
+<p align="center">
+  <img src="SARIMAX.png" alt="SARIMAX" width="600"/>
+</p>
 
 We followed these steps:
 1. **Order Selection.**
@@ -41,7 +45,7 @@ variables with p-value < 0.05, and ranked them by MAPE improvement.
 3. **Model Evaluation.** We evaluated model performance using p-values and MAPE
 (Mean Absolute Percentage Error):
 <p align="center">
-  <img src="MAPE.png" alt="MAPE" width="200"/>
+  <img src="MAPE.png" alt="MAPE" width="300"/>
 </p>
 
 #### Window Classification
