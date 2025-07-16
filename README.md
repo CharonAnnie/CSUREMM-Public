@@ -31,6 +31,7 @@ To assess the predictive power of cryptocurrency, we compared two models:
 <p align="center">
   <img src="SARIMA.png" alt="SARIMA" width="600"/>
 </p>
+
 - **SARIMAX**: use lagged cryptocurrency volatility as exogenous regressors:
 <p align="center">
   <img src="SARIMAX.png" alt="SARIMAX" width="600"/>
@@ -45,7 +46,7 @@ variables with p-value < 0.05, and ranked them by MAPE improvement.
 3. **Model Evaluation.** We evaluated model performance using p-values and MAPE
 (Mean Absolute Percentage Error):
 <p align="center">
-  <img src="MAPE.png" alt="MAPE" width="300"/>
+  <img src="MAPE.png" alt="MAPE" width="250"/>
 </p>
 
 #### Window Classification
