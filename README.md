@@ -1,8 +1,8 @@
 # Forecasting US Macroeconomic Indicators Using Cryptocurrency Volatility
 
 ## Authors
-- **Alice Ye** ([xy2680@barnard.edu](mailto:xy2680@barnard.edu))
-- **Annie Wang** ([tw3067@columbia.edu](mailto:tw3067@columbia.edu))
+- **Xintong (Alice) Ye** ([xy2680@barnard.edu](mailto:xy2680@barnard.edu))
+- **Tianqi (Annie) Wang** ([tw3067@columbia.edu](mailto:tw3067@columbia.edu))
 - **Tianyi Shen** ([ts3678@columbia.edu](mailto:ts3678@columbia.edu))
 
 ## Introduction
