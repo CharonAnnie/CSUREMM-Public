@@ -17,11 +17,11 @@ To what extent volatility in major cryptocurrencies, including stablecoins and n
 
 We collected data and computed monthly volatility for 8 macroeconomic variables and log-
 transformed monthly volatility for 8 cryptocurrencies between 2017-09 and 2025-01.
-![Data](Data.png)
+![Data](Images/Data.png)
 
 To prepare the data, we computed log volatility of cryptocurrencies:
 <p align="center">
-  <img src="log_vol.png" alt="Log Volatility" width="350"/>
+  <img src="Images/log_vol.png" alt="Log Volatility" width="350"/>
 </p>
 
 ## Methodology
@@ -29,12 +29,12 @@ To prepare the data, we computed log volatility of cryptocurrencies:
 To assess the predictive power of cryptocurrency, we compared two models:
 - **Baseline SARIMA**: no exogenous variables:
 <p align="center">
-  <img src="SARIMA.png" alt="SARIMA" width="600"/>
+  <img src="Images/SARIMA.png" alt="SARIMA" width="600"/>
 </p>
 
 - **SARIMAX**: use lagged cryptocurrency volatility as exogenous regressors:
 <p align="center">
-  <img src="SARIMAX.png" alt="SARIMAX" width="650"/>
+  <img src="Images/SARIMAX.png" alt="SARIMAX" width="650"/>
 </p>
 
 We followed these steps:
@@ -46,19 +46,19 @@ variables with p-value < 0.05, and ranked them by MAPE improvement.
 3. **Model Evaluation.** We evaluated model performance using p-values and MAPE
 (Mean Absolute Percentage Error):
 <p align="center">
-  <img src="MAPE.png" alt="MAPE" width="250"/>
+  <img src="Images/MAPE.png" alt="MAPE" width="250"/>
 </p>
 
 #### Window Classification
 Based on the volatility of our macroeconomic variables, we defined 3 windows to capture periods of high volatility [including the COVID shock], low volatility [without significant shock], and a more holistic, medium volatility period.
 <p align="center">
-  <img src="Windows.png" alt="Window" width="600"/>
+  <img src="Images/Windows.png" alt="Window" width="600"/>
 </p>
 
 ## Results & Discussion
 #### MAPE Improvement
 Combining all significant MAPE percentage changes across the three windows, we found improvement ranging from 2% to 93%, with an average improvement of 32%. Since MAPE measures the average prediction error as a percentage of actual values, larger MAPE percentage improvement indicated better model forecast accuracy in forecasting macroeconomic indicators when crypto is considered.
-![Heat](heat_map.png)
+![Heat](Images/heat_map.png)
 *Figure 1: SARIMAX vs. SARIMA MAPE improvement(%) for macro-crypto pairs, windows 1-3 using
 heatmapper [4]*
 
@@ -69,10 +69,10 @@ For each of the windows 1-3, we found that only certain cryptocurrencies helped 
 - In **Window 3** (moderate volatility), forecasts of the M1 money supply benefited the most from incorporating cryptocurrency volatility, with Dogecoin at a two-month lag reducing the MAPE by a substantial 93.39%.
 
 #### Sample Forecast: CC With Tether
-![Sample](Sample.png)
+![Sample](Images/Sample.png)
 *Figure 2: Consumer confidence index forecasts for window 3 with and without Tether volatility (3 months lag)*
 <p align="center">
-  <img src="CC_equation.png" alt="CC" width="700"/>
+  <img src="Images/CC_equation.png" alt="CC" width="700"/>
 </p>
 For Window 3, Tether, with a 3 month lag, proved significant in forecasting Consumer Confidence (p-value=0.01). Including Tether in the SARIMAX model improved the MAPE by 65.8% when compared to the benchmark SARIMA model. For every unit change in Tether log volatility, the forecast for CC volatility decreased by 1.38. This suggested that Tether, along with Ethereum and Litecoin, exhibited forecasting ability for Consumer Confidence during a moderately volatile period.
 
