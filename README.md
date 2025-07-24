@@ -39,7 +39,7 @@ To assess the predictive power of cryptocurrency, we compared two models:
 
 We followed these steps:
 1. **Order Selection.**
-![order](Order_selection.png)
+![order](Images/Order_selection.png)
 The seasonal period S is set to S = 3 month (quarterly marker).
 2. **Model Fitting.** We generated 0–6 month lags for each crypto asset, selected
 variables with p-value < 0.05, and ranked them by MAPE improvement.
